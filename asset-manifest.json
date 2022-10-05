@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/React-SpaceX/static/css/main.21769a28.css",
+    "main.js": "/React-SpaceX/static/js/main.3f50bf41.js",
+    "static/media/hero-banner-1.png": "/React-SpaceX/static/media/hero-banner-1.28c89ba5b01ff6b608eb.png",
+    "static/media/hero-banner-3.png": "/React-SpaceX/static/media/hero-banner-3.500d79e5635afef4e108.png",
+    "static/media/hero-banner-2.png": "/React-SpaceX/static/media/hero-banner-2.0f60a222d4e134ef54db.png",
+    "index.html": "/React-SpaceX/index.html",
+    "main.21769a28.css.map": "/React-SpaceX/static/css/main.21769a28.css.map",
+    "main.3f50bf41.js.map": "/React-SpaceX/static/js/main.3f50bf41.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21769a28.css",
+    "static/js/main.3f50bf41.js"
+  ]
+}
