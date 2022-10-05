@@ -1,0 +1,80 @@
+.container {
+
+   &_banner {
+      position: relative;
+      width: 100vw;
+      height: 440px;
+      background-position: center top;
+      background-size: cover;
+
+      &::after {
+         position: absolute;
+         top: 0;
+         right: 0;
+         left: 0;
+         bottom: 0;
+         content: '';
+         background: #1E1E1E;
+         opacity: 0.48;
+      }
+   }
+
+   &_title {
+      z-index: 100;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Syne', 'sans-serif';
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 800;
+      font-size: 3em;
+   }
+
+   &_contentWrapper {
+      width: 1300px;
+      padding: 64px 0 104px;
+      margin: 0 auto;
+   }
+
+   &_btn {
+      margin-bottom: 40px;
+      text-align: right;
+      border-bottom: 1px solid #D3EAFF;
+      padding-bottom: 10px;
+
+      button {
+         border: none;
+         background: none;
+         font-family: 'Lato', "sans-serif";
+         font-weight: 300;
+         font-size: 1.5em;
+         color: #556B84;
+         cursor: pointer;
+      }
+   }
+
+   &_cards {
+      position: relative;
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 24px;
+   }
+
+   &_empty {
+      position: absolute;
+      top: 800%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      p {
+         font-family: 'Syne', "sans-serif";
+         font-weight: 500;
+         font-size: 3em;
+         color: #556B84;
+      }
+   }
+}

@@ -1,0 +1,15 @@
+.favButton {
+   border: none;
+   padding: 15.5px;
+   transition: .3s;
+   cursor: pointer;
+
+   svg {
+      transform: translateY(2px);
+   }
+
+   &:hover {
+      transition: .3s;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+   }
+}

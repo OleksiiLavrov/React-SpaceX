@@ -1,0 +1,83 @@
+.container {
+   &_sliderWrapper {
+      position: relative;
+      width: 100vw;
+   }
+
+   &_title {
+      z-index: 100;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 1122px;
+      padding-left: 85px;
+      padding-top: 10px;
+
+      &Small {
+         margin: 0;
+         color: #fff;
+         text-transform: uppercase;
+         font-family: 'Syne', 'sans-serif';
+         font-weight: 800;
+         font-size: 3em;
+         text-align: center;
+      }
+      &Big {
+         margin: 0;
+         color: #fff;
+         text-transform: uppercase;
+         font-family: 'Syne', 'sans-serif';
+         font-weight: 800;
+         font-size: 19em;
+         text-align: center;
+      }
+   }
+   &_text {
+      position: absolute;
+      bottom: 2%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+      span {
+         font-family: 'Lato', 'sans-serif';
+         font-weight: 300;
+         font-size: 2em;
+         text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+         color: #fff;
+      }
+   }
+}
+
+.contentWrapper {
+   width: 1300px;
+   margin: 0 auto;
+   padding: 103px 0 89px;
+
+
+   &_cards {
+      width: 100%;
+      position: relative;
+   }
+
+   &_title {
+      margin: 0;
+      position: absolute;
+      top: 5px;
+      left: 0;
+      font-family: 'Syne', 'sans-serif';
+      font-weight: 800;
+      font-size: 2em;
+      text-transform: uppercase;
+      color: #1E1E1E;
+   }
+}

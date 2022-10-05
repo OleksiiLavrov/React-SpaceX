@@ -1,0 +1,82 @@
+.swiperHero {
+   width: 100vw;
+   position: relative;
+
+   &_slide {
+      width: 100vw;
+      height: 740px;
+      background-position: center center;
+      background-size: cover;
+
+      &::after {
+         position: absolute;
+         top: 0;
+         right: 0;
+         left: 0;
+         bottom: 0;
+         content: '';
+         background: #1E1E1E;
+         opacity: 0.48;
+      }
+   }
+
+   &_pagination {
+      z-index: 1000;
+      position: absolute;
+      top: calc((50%) + 40px);
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+   }
+}
+
+.swiperTours {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
+
+   &_slider {
+      display: flex;
+      gap: 24px;
+   }
+
+   &_navigation {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      align-self: flex-end;
+      margin-bottom: 40px;
+
+      button {
+         border: none;
+         padding: 15px 18.5px;
+         transition: .3s;
+         cursor: pointer;
+
+         svg {
+            transform: translateY(2px);
+         }
+
+         &:hover {
+            transition: .3s;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+         }
+      }
+
+   }
+
+   &_pagination {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+   }
+
+}

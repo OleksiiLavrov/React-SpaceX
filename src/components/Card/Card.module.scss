@@ -1,0 +1,46 @@
+.card {
+   border: 1px solid #D3EAFF;
+   box-sizing: border-box;
+   text-align: center;
+
+   &_content {
+      padding: 32px 32px 24px;
+      height: 220px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   &_img {
+      width: 100%;
+      height: 296px;
+      object-fit: cover;
+      object-position: bottom;
+   }
+
+   &_title {
+      margin: 0;
+      font-family: 'Syne', sans-serif;
+      font-size: 1.5em;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #1E1E1E;
+   }
+
+   &_descr {
+      margin: 0;
+      font-family: 'Lato', 'sans-serif';
+      font-weight: 300;
+      font-size: 1.5em;
+      color: #556B84;
+   }
+
+   &_btns {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+   }
+
+}
