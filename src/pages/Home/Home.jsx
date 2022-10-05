@@ -21,7 +21,7 @@ function Home() {
                to="best-tours"
                spy={true}
                smooth={true}
-               offset={-70}
+               offset={70}
                duration={500}
             >
                <p className={styles.container_text} >
