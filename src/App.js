@@ -30,7 +30,6 @@ function App() {
              <Route path="/about" element={<About />} />
              <Route path="/help" element={<Help />} />
              <Route path="/favourite" element={<Favourite />} />
-             <Route path="*" element={<Error />} />
           </Routes>
        </Router>
     </div>
