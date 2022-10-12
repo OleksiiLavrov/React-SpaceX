@@ -5,7 +5,7 @@ import {useDispatch} from "react-redux";
 import {setFetchedData} from "./redux-toolkit/fetchedDataSlice";
 
 import Header from "./components/Header/Header";
-import {Home, Tours, About, Help, Favourite, Error} from "./pages/index";
+import {Home, Tours, About, Help, Favourite, Error, Loading} from "./pages/index";
 import {TOURS_QUERY} from "./data/gql-query";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
    const fetchedData = [];
    const { data, loading, error } = useQuery(TOURS_QUERY);
 
-   if (loading) return "Loading...";
+   if (loading) return <Loading />;
    if (error) return <Error error={error.message} />
    data.histories.forEach(obj => {
       if (obj.flight !== null && obj.flight.links.flickr_images.length !== 0) fetchedData.push(obj)
@@ -30,6 +30,7 @@ function App() {
              <Route path="/about" element={<About />} />
              <Route path="/help" element={<Help />} />
              <Route path="/favourite" element={<Favourite />} />
+             <Route path="*" element={<Error />} />
           </Routes>
        </Router>
     </div>

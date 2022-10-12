@@ -1,5 +1,5 @@
 import React from 'react';
-import IconSvgSelector from "../assets/IconSvgSelector";
+import IconSvgSelector from "../../assets/IconSvgSelector";
 
 function SliderNavigation({arr, currentIndex, setCurrentIndex}) {
    const nextSlide = () => {

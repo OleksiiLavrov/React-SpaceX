@@ -9,7 +9,7 @@ function Header() {
    return (
       <div className={styles.header}>
          <div className={styles.navbar}>
-               <Link to="/"><img src={Logo} alt="Logo"/></Link>
+               <Link to="/"><img className={styles.navbar_logo} src={Logo} alt="Logo"/></Link>
                <ul className={styles.navbar_links}>
                   <li className={styles.navbar_link}>
                      <Link to="/">Home</Link>

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import styles from "./FavBtn.module.scss";
 import toast from 'react-hot-toast';
-import IconSvgSelector from "../../assets/IconSvgSelector";
+import IconSvgSelector from "../../../assets/IconSvgSelector";
 import {useDispatch, useSelector} from "react-redux";
 import {addToFavourite, delFromFavourite} from "../../../redux-toolkit/favouriteSlice";
 

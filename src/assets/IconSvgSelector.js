@@ -66,8 +66,6 @@ export default function IconSvgSelector({ id }) {
             </svg>
          );
       default:
-
-
          return null;
    }
 };

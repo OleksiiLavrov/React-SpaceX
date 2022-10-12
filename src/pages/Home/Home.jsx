@@ -1,13 +1,10 @@
 import React from 'react';
 import styles from "./Home.module.scss";
-import { Link, animateScroll as scroll } from "react-scroll";
+import {Link} from "react-scroll";
 import Slider from "../../components/Slider/Slider";
-import IconSvgSelector from "../../components/assets/IconSvgSelector";
-import Card from "../../components/Card/Card";
-import {useSelector} from "react-redux";
+import IconSvgSelector from "../../assets/IconSvgSelector";
 
 function Home() {
-   const fetchedData = useSelector(state => state.fetchedData.data);
    return (
       <div className={styles.container}>
          <section className={styles.container_sliderWrapper}>

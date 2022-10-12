@@ -9,6 +9,7 @@ function Card({data, task}) {
          <img
             src={data.flight.links.flickr_images[0]}
             className={styles.card_img}
+            alt={data.flight.mission_name}
          />
          <div className={styles.card_content}>
             <p className={styles.card_title}>{data.title}</p>

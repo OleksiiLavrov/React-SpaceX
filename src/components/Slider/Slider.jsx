@@ -1,10 +1,8 @@
 import React, {useState} from 'react';
 import {useSelector} from "react-redux";
 import styles from "./Slider.module.scss"
-import IconSvgSelector from "../assets/IconSvgSelector";
 
 import {HeroBanner1, HeroBanner2, HeroBanner3} from "../../data/images";
-import Card from "../Card/Card";
 import SlideTour from "./SlideTour";
 import SliderPagination from "./SliderPagination";
 import SliderNavigation from "./SliderNavigation";

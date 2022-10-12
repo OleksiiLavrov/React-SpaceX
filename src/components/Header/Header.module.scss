@@ -15,6 +15,11 @@
    justify-content: space-between;
    align-items: center;
 
+   &_logo {
+      width: 210px;
+      height: auto;
+   }
+
    &_links {
       display: flex;
       justify-content: space-between;

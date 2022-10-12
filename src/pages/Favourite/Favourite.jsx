@@ -1,5 +1,6 @@
 import React from 'react';
 import {useDispatch, useSelector} from "react-redux";
+import toast from "react-hot-toast";
 import styles from "./Favourite.module.scss";
 
 import {clearFavourite} from "../../redux-toolkit/favouriteSlice";
@@ -7,11 +8,12 @@ import Card from "../../components/Card/Card";
 import {HeroBanner2} from "../../data/images";
 
 
+
 function Favourite() {
    const toursData = useSelector(state => state.favourite.tours);
    const fetchedData = useSelector(state => state.fetchedData.data);
    const dispatch = useDispatch();
-   const favouriteList = [];
+   const favouriteList = []; // list of items in current page
    fetchedData.forEach(tour => {
       toursData?.forEach(tourId => {
          if (tour.id === tourId) {
@@ -22,6 +24,7 @@ function Favourite() {
 
    const clickHandler = () => {
       dispatch(clearFavourite())
+      toast.error(`All tours were deleted!`)
    }
    return (
       <div className={styles.container}>
@@ -29,9 +32,11 @@ function Favourite() {
             <h1 className={styles.container_title}>Favourites</h1>
          </div>
          <div className={styles.container_contentWrapper}>
-            <div className={styles.container_btn}>
-               <button onClick={clickHandler}>Clear all</button>
-            </div>
+            {favouriteList.length === 0 ? '' :
+               <div className={styles.container_btn}>
+                  <button onClick={clickHandler}>Clear all</button>
+               </div>
+            }
             <div className={styles.container_cards}>
             {favouriteList.length !== 0
                ? favouriteList.map(elem => (
